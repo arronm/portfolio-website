@@ -118,8 +118,13 @@
 						$menu._hide();
 
 					// Redirect.
-						window.setTimeout(function() {
-							window.location.href = href;
+						window.setTimeout(function() { // Why would you do this?! DON'T DO THIS!
+							// window.location.href = href;
+							/*
+								Note: This function should really parse the 'target' attribute and change behavior (especially since it's a template)
+								However, I am just putthing this here because I am not going to rewrite his JS base.
+							*/
+							window.open(href, '_blank');
 						}, 350);
 
 				});

@@ -119,11 +119,11 @@
 
 					// Redirect.
 						window.setTimeout(function() { // Why would you do this?! DON'T DO THIS!
-							// window.location.href = href;
 							/*
-								Note: This function should really parse the 'target' attribute and change behavior (especially since it's a template)
-								However, I am just putthing this here because I am not going to rewrite his JS base.
+								NOTE: This function should really parse the 'target' attribute and change behavior (especially since it's a template)
+								I am just putting this here, instead, because I am not going to rewrite the entire JS base
 							*/
+							// window.location.href = href;
 							window.open(href, '_blank');
 						}, 350);
 

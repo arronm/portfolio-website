@@ -3758,16 +3758,18 @@ input, select, textarea {
 				margin: 0 3em 2em 0;
 				width: 22em;
 				overflow: hidden;
+				flex: 1; /* Defining flex for compatability */
 				-ms-flex: 1;
 			}
-
-				.wrapper.spotlight .image img {
-					border-radius: 100%;
-					width: 100%;
-				}
-
+			
+			.wrapper.spotlight .image img {
+				border-radius: 100%;
+				width: 100%;
+			}
+			
 			.wrapper.spotlight .content {
 				width: 100%;
+				flex: 2; /* Defining flex for compatability */
 				-ms-flex: 2;
 			}
 
